@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support Grace Community Church International Nanyuki through tithes, offerings, and special donations. Multiple giving options available.">
+    <meta name="keywords" content="church giving, tithes, offerings, donations, M-Pesa, bank transfer, GCCI Nanyuki">
+    <meta name="author" content="Grace Community Church International Nanyuki">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Give - Support Our Ministry | GCCI Nanyuki">
+    <meta property="og:description" content="Your generous giving helps us continue God's work in our community. Multiple convenient giving options available.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.gccinanyuki.org/give.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Give - Support Our Ministry | Grace Community Church International Nanyuki</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">GCCI Nanyuki</a>
+                </div>
+                <div class="contact-quick">
+                    <span>📞 +254 700 000 000</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navigation -->
+        <nav>
+            <div class="container">
+                <div class="nav-container">
+                    <div class="menu-toggle" aria-label="Toggle navigation menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="church.html">Church</a></li>
+                        <li><a href="statement-of-faith.html">Statement of Faith</a></li>
+                        <li><a href="satellite-churches.html">Satellite Churches</a></li>
+                        <li><a href="community-programmes.html">Community Programmes</a></li>
+                        <li><a href="childrens-church.html">Children's Church</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="resources.html">Resource Center</a></li>
+                        <li><a href="give.html">Give</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Give to Support Our Ministry</h1>
+                <p>Your generous giving helps us continue God's work in our community and beyond</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Biblical Foundation -->
+            <section class="biblical-foundation">
+                <div class="card" style="text-align: center; background: linear-gradient(135deg, #27ae60, #2ecc71); color: white;">
+                    <h2 style="color: white; border: none;">💝 The Heart of Giving</h2>
+                    <blockquote style="background: rgba(255,255,255,0.1); padding: 1.5rem; border-radius: 8px; margin: 1rem 0; font-size: 1.1rem;">
+                        "Each of you should give what you have decided in your heart to give, not reluctantly or under compulsion, for God loves a cheerful giver."
+                        <br><strong>- 2 Corinthians 9:7</strong>
+                    </blockquote>
+                    <p style="font-size: 1rem; opacity: 0.9;">
+                        At GCCI Nanyuki, we believe that giving is an act of worship and a response to God's generous love toward us. 
+                        Your contributions help us minister to our community, support our satellite churches, and spread the Gospel message.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Giving Options -->
+            <section class="giving-options">
+                <h2>💳 Ways to Give</h2>
+                <div class="give-options">
+                    <div class="give-card">
+                        <h4>💝 Tithes & Offerings</h4>
+                        <p>Support the general ministry and operations of the church through your tithes and offerings. This includes pastoral support, facility maintenance, and ministry programs.</p>
+                        <div class="amount-buttons">
+                            <button class="amount-btn" data-amount="500">KSh 500</button>
+                            <button class="amount-btn" data-amount="1000">KSh 1,000</button>
+                            <button class="amount-btn" data-amount="2500">KSh 2,500</button>
+                            <button class="amount-btn" data-amount="5000">KSh 5,000</button>
+                        </div>
+                        <div style="margin: 1rem 0;">
+                            <input type="number" id="tithe-custom" placeholder="Enter custom amount" style="width: 100%; padding: 0.8rem; border: 1px solid rgba(255,255,255,0.3); border-radius: 5px; background: rgba(255,255,255,0.1); color: white;" min="1">
+                        </div>
+                        <button class="btn" style="background: white; color: #27ae60; width: 100%;" onclick="initiateGiving('tithe')">Give Now</button>
+                    </div>
+                    
+                    <div class="give-card">
+                        <h4>🏗️ Building Fund</h4>
+                        <p>Help us expand our facilities to better serve our growing congregation and community. Support church building projects and infrastructure development.</p>
+                        <div class="amount-buttons">
+                            <button class="amount-btn" data-amount="1000">KSh 1,000</button>
+                            <button class="amount-btn" data-amount="2500">KSh 2,500</button>
+                            <button class="amount-btn" data-amount="5000">KSh 5,000</button>
+                            <button class="amount-btn" data-amount="10000">KSh 10,000</button>
+                        </div>
+                        <div style="margin: 1rem 0;">
+                            <input type="number" id="building-custom" placeholder="Enter custom amount" style="width: 100%; padding: 0.8rem; border: 1px solid rgba(255,255,255,0.3); border-radius: 5px; background: rgba(255,255,255,0.1); color: white;" min="1">
+                        </div>
+                        <button class="btn" style="background: white; color: #27ae60; width: 100%;" onclick="initiateGiving('building')">Contribute</button>
+                    </div>
+                    
+                    <div class="give-card">
+                        <h4>🌍 Missions & Outreach</h4>
+                        <p>Support our local and international mission efforts, satellite church planting, and community outreach programs that spread the Gospel worldwide.</p>
+                        <div class="amount-buttons">
+                            <button class="amount-btn" data-amount="500">KSh 500</button>
+                            <button class="amount-btn" data-amount="1500">KSh 1,500</button>
+                            <button class="amount-btn" data-amount="3000">KSh 3,000</button>
+                            <button class="amount-btn" data-amount="7500">KSh 7,500</button>
+                        </div>
+                        <div style="margin: 1rem 0;">
+                            <input type="number" id="missions-custom" placeholder="Enter custom amount" style="width: 100%; padding: 0.8rem; border: 1px solid rgba(255,255,255,0.3); border-radius: 5px; background: rgba(255,255,255,0.1); color: white;" min="1">
+                        </div>
+                        <button class="btn" style="background: white; color: #27ae60; width: 100%;" onclick="initiateGiving('missions')">Support Missions</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Special Projects -->
+            <section class="special-projects">
+                <h2>🎯 Special Projects</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h4>💧 Clean Water Project</h4>
+                        <p><strong>Goal:</strong> KSh 500,000</p>
+                        <p><strong>Raised:</strong> KSh 275,000 (55%)</p>
+                        <div style="background: #ecf0f1; height: 20px; border-radius: 10px; margin: 1rem 0; overflow: hidden;">
+                            <div style="width: 55%; height: 100%; background: linear-gradient(135deg, #3498db, #2980b9); border-radius: 10px;"></div>
+                        </div>
+                        <p>Providing clean water access to 3 satellite church communities. This project will install boreholes and water tanks to serve over 500 families.</p>
+                        <button class="btn mt-1" onclick="donateToProject('water')">Donate to Project</button>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>📚 Children's Education Fund</h4>
+                        <p><strong>Goal:</strong> KSh 200,000</p>
+                        <p><strong>Raised:</strong> KSh 125,000 (63%)</p>
+                        <div style="background: #ecf0f1; height: 20px; border-radius: 10px; margin: 1rem 0; overflow: hidden;">
+                            <div style="width: 63%; height: 100%; background: linear-gradient(135deg, #e74c3c, #c0392b); border-radius: 10px;"></div>
+                        </div>
+                        <p>Supporting school fees and educational materials for 30 underprivileged children in our community and satellite church areas.</p>
+                        <button class="btn mt-1" onclick="donateToProject('education')">Support Education</button>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>🏥 Medical Outreach Equipment</h4>
+                        <p><strong>Goal:</strong> KSh 150,000</p>
+                        <p><strong>Raised:</strong> KSh 45,000 (30%)</p>
+                        <div style="background: #ecf0f1; height: 20px; border-radius: 10px; margin: 1rem 0; overflow: hidden;">
+                            <div style="width: 30%; height: 100%; background: linear-gradient(135deg, #f39c12, #e67e22); border-radius: 10px;"></div>
+                        </div>
+                        <p>Purchasing medical equipment and supplies for our monthly medical outreach programs serving remote communities.</p>
+                        <button class="btn mt-1" onclick="donateToProject('medical')">Fund Healthcare</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Payment Methods -->
+            <section class="payment-methods">
+                <h2>💳 Payment Methods</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h4>📱 Mobile Money</h4>
+                        <p><strong>M-Pesa (Safaricom):</strong></p>
+                        <ul>
+                            <li>• Paybill: 247247</li>
+                            <li>• Account: GCCI001</li>
+                            <li>• Reference: Your Name + Purpose</li>
+                        </ul>
+                        <p><strong>Airtel Money:</strong></p>
+                        <ul>
+                            <li>• Number: 0722 000 000</li>
+                            <li>• Reference: GCCI Giving</li>
+                        </ul>
+                        <p><strong>T-Kash (Telkom):</strong></p>
+                        <ul>
+                            <li>• Number: 0700 000 000</li>
+                            <li>• Reference: GCCI Donation</li>
+                        </ul>
+                        <button class="btn mt-1">Mobile Money Guide</button>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>🏦 Bank Transfer</h4>
+                        <p><strong>KCB Bank:</strong></p>
+                        <ul>
+                            <li>• Account Name: Grace Community Church International</li>
+                            <li>• Account Number: 1234567890</li>
+                            <li>• Branch: Nanyuki Branch</li>
+                            <li>• Swift Code: KCBLKENX</li>
+                        </ul>
+                        <p><strong>Equity Bank:</strong></p>
+                        <ul>
+                            <li>• Account Number: 0987654321</li>
+                            <li>• Branch: Nanyuki Branch</li>
+                        </ul>
+                        <button class="btn mt-1">Bank Details</button>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>💳 Online Payment</h4>
+                        <p>Secure online payments through our payment gateway. We accept:</p>
+                        <ul>
+                            <li>• Visa and Mastercard</li>
+                            <li>• PayPal</li>
+                            <li>• Stripe</li>
+                            <li>• Mobile banking apps</li>
+                        </ul>
+                        <p>All online transactions are secured with SSL encryption for your safety.</p>
+                        <button class="btn mt-1">Pay Online</button>
+                    </div>
+                    
+                    <div class="card">
+                        <h4>💰 Cash Giving</h4>
+                        <p><strong>During Services:</strong></p>
+                        <ul>
+                            <li>• Sunday service offering</li>
+                            <li>• Special offering envelopes</li>
+                            <li>• Tithe envelopes available</li>
+                        </ul>
+                        <p><strong>Church Office:</strong></p>
+                        <ul>
+                            <li>• Monday - Friday: 9:00 AM - 5:00 PM</li>
+                            <li>• Saturday: 9:00 AM - 1:00 PM</li>
+                            <li>• Receipt provided</li>
+                        </ul>
+                        <button class="btn mt-1">Office Hours</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Recurring Giving -->
+            <section class="recurring-giving">
+                <h2>🔄 Set Up Recurring Giving</h2>
+                <div class="card">
+                    <h4>Make Giving Simple and Consistent</h4>
+                    <p>Set up automatic recurring donations to support our ministry consistently. Choose your frequency and amount, and we'll handle the rest.</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 2rem 0;">
+                        <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                            <h5>📅 Weekly Giving</h5>
+                            <p>Automatic weekly contributions aligned with your regular income schedule.</p>
+                            <button class="btn">Set Up Weekly</button>
+                        </div>
+                        
+                        <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                            <h5>📆 Monthly Giving</h5>
+                            <p>Monthly donations that align with your monthly budget and expenses.</p>
+                            <button class="btn">Set Up Monthly</button>
+                        </div>
+                        
+                        <div style="text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px;">
+                            <h5>💼 Quarterly Giving</h5>
+                            <p>Quarterly contributions for those who prefer less frequent giving schedules.</p>
+                            <button class="btn">Set Up Quarterly</button>
+                        </div>
+                    </div>
+                    
+                    <div style="background: #e8f6f3; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                        <h5>Benefits of Recurring Giving:</h5>
+                        <ul>
+                            <li>• Consistent support for church ministries</li>
+                            <li>• Automatic tax-deductible receipts</li>
+                            <li>• Easy to modify or cancel anytime</li>
+                            <li>• Helps with church budget planning</li>
+                            <li>• No need to remember to give each time</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Giving Impact -->
+            <section class="giving-impact">
+                <h2>🌟 Your Giving Impact</h2>
+                <div class="cards-grid">
+                    <div class="card" style="text-align: center;">
+                        <h4 style="color: #3498db; font-size: 2rem;">KSh 500</h4>
+                        <p><strong>Can provide:</strong></p>
+                        <ul style="text-align: left;">
+                            <li>• Sunday school materials for 10 children</li>
+                            <li>• One day's meals for orphanage</li>
+                            <li>• Transportation for outreach team</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card" style="text-align: center;">
+                        <h4 style="color: #e74c3c; font-size: 2rem;">KSh 2,000</h4>
+                        <p><strong>Can provide:</strong></p>
+                        <ul style="text-align: left;">
+                            <li>• School uniform for one child</li>
+                            <li>• Medical supplies for one outreach</li>
+                            <li>• Audio equipment for satellite church</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card" style="text-align: center;">
+                        <h4 style="color: #f39c12; font-size: 2rem;">KSh 5,000</h4>
+                        <p><strong>Can provide:</strong></p>
+                        <ul style="text-align: left;">
+                            <li>• One month school fees for a child</li>
+                            <li>• Startup materials for new satellite church</li>
+                            <li>• Food packages for 5 families</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card" style="text-align: center;">
+                        <h4 style="color: #27ae60; font-size: 2rem;">KSh 10,000</h4>
+                        <p><strong>Can provide:</strong></p>
+                        <ul style="text-align: left;">
+                            <li>• Training for 5 satellite church leaders</li>
+                            <li>• Complete sound system for branch church</li>
+                            <li>• Emergency assistance for 3 families</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tax Information -->
+            <section class="tax-information">
+                <h2>🧾 Tax Information & Receipts</h2>
+                <div class="card">
+                    <h4>Tax-Deductible Donations</h4>
+                    <p>All donations to Grace Community Church International are tax-deductible under Kenyan law. We provide official receipts for all contributions.</p>
+                    
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 2rem 0;">
+                        <div>
+                            <h5>📋 What You Need:</h5>
+                            <ul>
+                                <li>• Your full legal name</li>
+                                <li>• KRA PIN number</li>
+                                <li>• Contact information</li>
+                                <li>• Payment reference</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h5>📧 Receipt Delivery:</h5>
+                            <ul>
+                                <li>• Email receipts (immediate)</li>
+                                <li>• SMS confirmation</li>
+                                <li>• Physical receipts (on request)</li>
+                                <li>• Annual giving statements</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h5>📊 Tax Benefits:</h5>
+                            <ul>
+                                <li>• Reduce taxable income</li>
+                                <li>• Lower overall tax burden</li>
+                                <li>• Support recognized charity</li>
+                                <li>• Compliance with KRA requirements</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div style="background: #fff3cd; padding: 1rem; border-radius: 8px; border-left: 4px solid #ffc107;">
+                        <p><strong>Important:</strong> Please consult with your tax advisor for specific information about how your donations may affect your tax situation.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact for Giving -->
+            <section class="giving-contact">
+                <div class="card" style="background: linear-gradient(135deg, #3498db, #2980b9); color: white; text-align: center;">
+                    <h2 style="color: white; border: none;">Questions About Giving?</h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                        Our finance team is here to help with any questions about giving, payment methods, receipts, or special projects. 
+                        We're committed to transparency and making giving easy and secure.
+                    </p>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+                        <div>
+                            <h4 style="color: white;">📧 Finance Team</h4>
+                            <p>finance@gccinanyuki.org</p>
+                        </div>
+                        <div>
+                            <h4 style="color: white;">📞 Giving Hotline</h4>
+                            <p>+254 700 000 200</p>
+                        </div>
+                        <div>
+                            <h4 style="color: white;">💬 WhatsApp</h4>
+                            <p>+254 722 000 200</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="mailto:finance@gccinanyuki.org" class="btn" style="background: white; color: #3498db;">Contact Finance Team</a>
+                        <button class="btn btn-outline" style="border-color: white; color: white;" onclick="downloadGivingGuide()">Download Giving Guide</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Grace Community Church International</h4>
+                    <p>A place where faith grows, community thrives, and lives are transformed by God's love.</p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook" aria-label="Facebook">📘</a>
+                        <a href="#" title="Twitter" aria-label="Twitter">🐦</a>
+                        <a href="#" title="Instagram" aria-label="Instagram">📷</a>
+                        <a href="#" title="YouTube" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="church.html">About Us</a></li>
+                        <li><a href="statement-of-faith.html">Our Beliefs</a></li>
+                        <li><a href="events.html">Events</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Ministries</h4>
+                    <ul>
+                        <li><a href="childrens-church.html">Children's Church</a></li>
+                        <li><a href="community-programmes.html">Community Programs</a></li>
+                        <li><a href="satellite-churches.html">Satellite Churches</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 Nanyuki Town, Laikipia County</p>
+                    <p>📞 <a href="tel:+254700000000">+254 700 000 000</a></p>
+                    <p>📧 <a href="mailto:info@gccinanyuki.org">info@gccinanyuki.org</a></p>
+                    <p>🌐 <a href="https://www.gccinanyuki.org">www.gccinanyuki.org</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Grace Community Church International - Nanyuki. All rights reserved. | Powered by Avenia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Giving functionality
+        let selectedGivingType = '';
+        let selectedAmount = 0;
+        
+        function initiateGiving(type) {
+            selectedGivingType = type;
+            
+            // Get selected amount or custom amount
+            const activeBtn = document.querySelector(`#${type}-section .amount-btn.active`);
+            const customInput = document.getElementById(`${type}-custom`);
+            
+            if (customInput && customInput.value) {
+                selectedAmount = parseInt(customInput.value);
+            } else if (activeBtn) {
+                selectedAmount = parseInt(activeBtn.getAttribute('data-amount'));
+            } else {
+                showGivingNotification('Please select or enter an amount', 'error');
+                return;
+            }
+            
+            if (selectedAmount < 1) {
+                showGivingNotification('Please enter a valid amount', 'error');
+                return;
+            }
+            
+            showPaymentOptions();
+        }
+        
+        function showPaymentOptions() {
+            const modal = createPaymentModal();
+            document.body.appendChild(modal);
+        }
+        
+        function createPaymentModal() {
+            const modal = document.createElement('div');
+            modal.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 10000;
+                padding: 20px;
+            `;
+            
+            modal.innerHTML = `
+                <div style="
+                    background: white;
+                    padding: 2rem;
+                    border-radius: 10px;
+                    max-width: 500px;
+                    width: 100%;
+                    max-height: 90vh;
+                    overflow-y: auto;
+                ">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                        <h3>Complete Your Giving</h3>
+                        <button onclick="closePaymentModal()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer;">&times;</button>
+                    </div>
+                    
+                    <div style="background: #f8f9fa; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem;">
+                        <p><strong>Type:</strong> ${selectedGivingType.charAt(0).toUpperCase() + selectedGivingType.slice(1)}</p>
+                        <p><strong>Amount:</strong> KSh ${selectedAmount.toLocaleString()}</p>
+                    </div>
+                    
+                    <h4>Choose Payment Method:</h4>
+                    <div style="display: grid; gap: 1rem; margin: 1rem 0;">
+                        <button class="btn" onclick="processPayment('mpesa')" style="width: 100%;">📱 M-Pesa</button>
+                        <button class="btn" onclick="processPayment('bank')" style="width: 100%;">🏦 Bank Transfer</button>
+                        <button class="btn" onclick="processPayment('card')" style="width: 100%;">💳 Credit/Debit Card</button>
+                        <button class="btn btn-outline" onclick="processPayment('cash')" style="width: 100%;">💰 Cash (Office Visit)</button>
+                    </div>
+                </div>
+            `;
+            
+            return modal;
+        }
+        
+        function closePaymentModal() {
+            const modal = document.querySelector('[style*="position: fixed"]');
+            if (modal) {
+                document.body.removeChild(modal);
+            }
+        }
+        
+        function processPayment(method) {
+            closePaymentModal();
+            
+            switch(method) {
+                case 'mpesa':
+                    showMpesaInstructions();
+                    break;
+                case 'bank':
+                    showBankInstructions();
+                    break;
+                case 'card':
+                    showCardPayment();
+                    break;
+                case 'cash':
+                    showCashInstructions();
+                    break;
+            }
+        }
+        
+        function showMpesaInstructions() {
+            showGivingNotification(
+                'M-Pesa Instructions',
+                `
+                1. Go to M-Pesa menu
+                2. Select Lipa na M-Pesa
+                3. Select Pay Bill
+                4. Enter Business Number: 247247
+                5. Enter Account: GCCI001
+                6. Enter Amount: ${selectedAmount}
+                7. Enter your M-Pesa PIN
+                8. Confirm the transaction
+                
+                You will receive a confirmation SMS.
+                `,
+                'info'
+            );
+        }
+        
+        function showBankInstructions() {
+            showGivingNotification(
+                'Bank Transfer Instructions',
+                `
+                Bank: KCB Bank
+                Account Name: Grace Community Church International
+                Account Number: 1234567890
+                Branch: Nanyuki Branch
+                Amount: KSh ${selectedAmount.toLocaleString()}
+                
+                Please use your name as reference.
+                `,
+                'info'
+            );
+        }
+        
+        function showCardPayment() {
+            showGivingNotification('Redirecting...', 'Redirecting to secure payment gateway...', 'info');
+            // In a real implementation, this would redirect to a payment processor
+        }
+        
+        function showCashInstructions() {
+            showGivingNotification(
+                'Cash Payment',
+                `
+                Please visit our church office:
+                
+                Address: GCCI Nanyuki Main Campus
+                Hours: Monday-Friday 9:00 AM - 5:00 PM
+                Saturday: 9:00 AM - 1:00 PM
+                
+                Amount to pay: KSh ${selectedAmount.toLocaleString()}
+                Purpose: ${selectedGivingType.charAt(0).toUpperCase() + selectedGivingType.slice(1)}
+                
+                A receipt will be provided.
+                `,
+                'info'
+            );
+        }
+        
+        function showGivingNotification(title, message, type = 'info') {
+            if (window.GCCIWebsite && window.GCCIWebsite.showNotification) {
+                window.GCCIWebsite.showNotification(title, message, type);
+            } else {
+                alert(title + '\n\n' + message);
+            }
+        }
+        
+        function donateToProject(project) {
+            selectedGivingType = project + ' project';
+            showPaymentOptions();
+        }
+        
+        function downloadGivingGuide() {
+            showGivingNotification('Download', 'Giving guide will be available soon!', 'info');
+        }
+        
+        // Initialize amount button listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // This functionality is already handled by the main script.js file
+        });
+    </script>
+</body>
+</html>

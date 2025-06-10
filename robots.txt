@@ -1,0 +1,53 @@
+# Robots.txt for Grace Community Church International Nanyuki
+# https://www.gccinanyuki.org/robots.txt
+
+User-agent: *
+Allow: /
+
+# Allow access to CSS and JavaScript files
+Allow: /styles.css
+Allow: /script.js
+Allow: /images/
+Allow: /gallery/
+
+# Disallow any admin or private areas (add as needed)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /members-only/
+
+# Sitemap location
+Sitemap: https://www.gccinanyuki.org/sitemap.xml
+
+# Crawl delay (optional - 1 second between requests)
+Crawl-delay: 1
+
+# Specific instructions for different search engines
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# Yahoo
+User-agent: Slurp
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Prevent crawling of search results pages (if any)
+# Disallow: /search?
+# Disallow: /*?
+
+# Prevent crawling of duplicate content (if any)
+# Disallow: /print/
+# Disallow: /*?print=1
+
+# Allow access to important files for verification
+Allow: /favicon.ico
+Allow: /apple-touch-icon.png
+Allow: /manifest.json
